@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 583.51 421.97">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_名称未設定グラデーション_5);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: url(#_名称未設定グラデーション_7);
+      }
+    </style>
+    <linearGradient id="_名称未設定グラデーション_5" data-name="名称未設定グラデーション 5" x1="0" y1="209.64" x2="583.51" y2="209.64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#81d9f4"/>
+      <stop offset=".21" stop-color="#8ad8f5"/>
+      <stop offset=".56" stop-color="#a3d8f9"/>
+      <stop offset=".99" stop-color="#ccd8ff"/>
+    </linearGradient>
+    <linearGradient id="_名称未設定グラデーション_7" data-name="名称未設定グラデーション 7" x1="144.34" y1="346.8" x2="294.68" y2="346.8" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#81d9f4"/>
+      <stop offset=".31" stop-color="#8ad8f6"/>
+      <stop offset=".83" stop-color="#a3d7fc"/>
+      <stop offset=".99" stop-color="#add7ff"/>
+    </linearGradient>
+  </defs>
+  <g id="_レイヤー_1-2" data-name="レイヤー_1">
+    <g>
+      <path class="cls-1" d="M583.51,182.16v237.13h-78.22l-.7-135.69-53.71,70.83-160.19-172.45-31.03,74.65h-74.15l57.05-132.65h75.36l67.82,71.91c44.25-24.87,51.73-50.58,48.36-73.16-4.51-30.13-45.19-58.94-89.94-59.05h-136.05L75.17,419.28H0L164.59,0h179.57c29.3,1.37,54.59-.35,92.2,24.69,16.55,11.02,57.07,36.26,62.19,98.2,3.8,46.05-14.12,86.27-65.26,121.14l21.41,21.37,60.42-83.25h68.38Z"/>
+      <circle class="cls-3" cx="219.51" cy="346.8" r="75.17"/>
+      <path class="cls-2" d="M271.96,326.2q-19.37,9.52-28.95,28.95-9.62-19.49-29.11-29.11,19.37-9.52,28.95-28.95,9.62,19.49,29.11,29.11Z"/>
+    </g>
+  </g>
+</svg>
