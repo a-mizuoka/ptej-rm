@@ -33,7 +33,7 @@ a:hover {
   z-index: 50;
 }
 
-.nav {
+.site-header .nav {
   max-width: 1200px;
   margin: 0 auto;
   padding: 16px 24px;
@@ -42,12 +42,12 @@ a:hover {
   gap: 14px;
 }
 
-.brand img {
+.site-header .nav .brand img {
   height: 28px;
   display: block;
 }
 
-.nav-links {
+.site-header .nav .nav-links {
   margin-left: auto;
   display: flex;
   gap: 24px;
@@ -107,7 +107,7 @@ a:hover {
 
 /* SECTION */
 section {
-  padding: 0px 20px 80px 20px;
+  padding: 0 20px 80px;
   position: relative;
   z-index: 1;
 }
@@ -116,12 +116,12 @@ section.top {
   padding-top: 80px;
 }
 
-.container {
+section .container {
   max-width: 1100px;
   margin: 0 auto;
 }
 
-.section-h {
+section .section-h {
   font-size: 28px;
   margin: 0 0 18px;
   font-weight: 800;
@@ -130,7 +130,7 @@ section.top {
   color: transparent;
 }
 
-.lead {
+section .lead {
   color: #475569;
   margin: 0 0 28px;
   font-size: 18px;
@@ -150,14 +150,14 @@ section.top {
   padding: 28px;
 }
 
-.chips {
+.services .chips {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin: 0 0 14px;
 }
 
-.chip {
+.services .chips .chip {
   padding: 10px 14px;
   border-radius: 999px;
   border: 1px solid rgba(38, 99, 235, 0.25);
@@ -167,26 +167,48 @@ section.top {
   transition: .25s;
 }
 
-.chip.active {
+.services .chips .chip.active {
   background: var(--grad-accent);
   color: #fff;
   border-color: transparent;
   box-shadow: 0 8px 22px rgba(90, 110, 250, 0.28);
 }
 
-.pane {
+.services .pane {
   display: none;
   animation: fade .4s ease;
 }
 
-.pane.active {
+.services .pane.active {
   display: block;
+}
+
+.services .pane .pane-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.services .pane .card {
+  background: #ffffffdd;
+  border: 1px solid #eef2ff;
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.services .pane .card h3 {
+  margin: 0 0 8px;
+}
+
+.services .pane .card p {
+  margin: 0;
+  color: #546070;
 }
 
 @keyframes fade {
   from {
     opacity: 0;
-    transform: translateY(px);
+    transform: translateY(8px);
   }
   to {
     opacity: 1;
@@ -194,40 +216,14 @@ section.top {
   }
 }
 
-.pane-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-
-.pane .card {
-  background: #ffffffdd;
-  border: 1px solid #eef2ff;
-  border-radius: 16px;
-  padding: 18px;
-}
-
-.pane .card h3 {
-  margin: 0 0 8px;
-}
-
-.pane .card p {
-  margin: 0;
-  color: #546070;
-}
-
 /* COMPANY INFO */
-.company_info,
-.company_info tbody,
-.company_info tr,
-.company_info th,
-.company_info td {
-  display: block;
-  width: 100%;
-}
-
 .company_info {
   border-spacing: 0;
+}
+
+.company_info, .company_info tbody, .company_info tr, .company_info th, .company_info td {
+  display: block;
+  width: 100%;
 }
 
 .company_info tr {
@@ -256,7 +252,7 @@ footer {
   text-align: center;
 }
 
-.small {
+footer .small {
   font-size: 14px;
   color: #cbd5e1;
 }
