@@ -20,7 +20,8 @@
     .hero p{position:relative;max-width:820px;margin:0 auto;font-size:18px;color:#1e293b;white-space:pre-line;z-index:1}
 
     /* SECTION */
-    section{padding:90px 20px; position:relative; z-index:1}
+    section{padding: 0px 20px 80px 20px; position:relative; z-index:1;}
+    section.top{padding-top: 80px;}
     .container{max-width:1100px;margin:0 auto}
     .section-h{font-size:28px;margin:0 0 18px;font-weight:800;background:var(--grad);-webkit-background-clip:text;color:transparent}
     .lead{color:#475569;margin:0 0 28px;font-size:18px}
@@ -40,22 +41,38 @@
     .pane .card h3{margin:0 0 8px}
     .pane .card p{margin:0;color:#546070}
 
-    /* COMPANY */
-    .company{background:#fff;border-radius:20px;box-shadow:0 14px 40px rgba(15,43,70,.12);padding:28px}
-    .company ul{list-style:none;padding:0;margin:0;line-height:1.9;font-size:17px}
-
     /* COMPANY INFO */
-    .company_info {
-      border-spacing: 1rem;
-      tbody {
-        tr {
-          th {
-            text-align: justify;
-            text-align-last:justify;
-          }
-        }
-      }
+    .company_info,
+    .company_info tbody,
+    .company_info tr,
+    .company_info th,
+    .company_info td {
+      display: block;
+      width: 100%;
     }
+
+    .company_info {
+      border-spacing: 0; // もう不要なのでリセット
+    }
+
+    .company_info tr {
+      margin: 0 0 1.2rem;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: .6rem;
+    }
+
+    .company_info th {
+      text-align: left;
+      text-align-last: left;
+      margin-bottom: .2rem;
+      font-weight: 600;
+      color: #475569; // muted色より見やすいグレー
+    }
+
+    .company_info td {
+      font-weight: 500;
+}
+        
 
     /* FOOTER */
     footer{padding:40px 20px;background:#0f172a;color:#fff;text-align:center}
