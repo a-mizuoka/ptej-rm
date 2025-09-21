@@ -44,6 +44,11 @@ a {
     .brand img {
       height: 28px;
       display: block;
+      content: url("images/rm_mojilogo.svg");
+
+      @media (max-width: 640px) {
+        content: url("images/rm_logo.svg");
+      }
     }
 
     .nav-links {

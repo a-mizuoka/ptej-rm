@@ -46,6 +46,13 @@ a:hover {
 .site-header .nav .brand img {
   height: 28px;
   display: block;
+  content: url("images/rm_mojilogo.svg");
+}
+
+@media (max-width: 640px) {
+  .site-header .nav .brand img {
+    content: url("images/rm_logo.svg");
+  }
 }
 
 .site-header .nav .nav-links {
