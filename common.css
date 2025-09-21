@@ -1,3 +1,36 @@
+/* noto-sans-jp-regular - japanese */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/noto-sans-jp-v55-japanese-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* noto-sans-jp-600 - japanese */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/noto-sans-jp-v55-japanese-600.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* noto-sans-jp-900 - japanese */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 900;
+  src: url("./fonts/noto-sans-jp-v55-japanese-900.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 :root {
   --grad: linear-gradient(135deg, #3fe0ff 0%, #6ecbff 35%, #7b8cff 70%, #b48cff 100%);
   --grad-accent: linear-gradient(135deg, #13d8ff 0%, #4aa5ff 45%, #9b7bff 100%);
@@ -132,7 +165,7 @@ section .container {
 section .section-h {
   font-size: 28px;
   margin: 0 0 18px;
-  font-weight: 800;
+  font-weight: 900;
   background: var(--grad);
   -webkit-background-clip: text;
   color: transparent;
@@ -170,7 +203,7 @@ section .lead {
   border-radius: 999px;
   border: 1px solid rgba(38, 99, 235, 0.25);
   background: rgba(255, 255, 255, 0.65);
-  font-weight: 700;
+  font-weight: 600;
   cursor: pointer;
   transition: .25s;
 }
@@ -249,7 +282,7 @@ section .lead {
 }
 
 .company_info td {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /* FOOTER */
