@@ -252,6 +252,16 @@ footer {
   text-align: center;
 }
 
+footer .antipiracy {
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+}
+
+footer .company-name {
+  padding-top: 20px;
+}
+
 footer .small {
   font-size: 14px;
   color: #cbd5e1;
