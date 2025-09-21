@@ -46,12 +46,12 @@ a:hover {
 .site-header .nav .brand img {
   height: 28px;
   display: block;
-  content: url("images/rm_mojilogo.svg");
+  content: url("/images/rm_mojilogo.svg");
 }
 
 @media (max-width: 640px) {
   .site-header .nav .brand img {
-    content: url("images/rm_logo.svg");
+    content: url("/images/rm_logo.svg");
   }
 }
 
@@ -85,7 +85,7 @@ a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("images/icon.svg") no-repeat center right/60%;
+  background: url("/images/icon.svg") no-repeat center right/60%;
   opacity: .12;
   z-index: 0;
 }
@@ -142,120 +142,6 @@ section .lead {
   color: #475569;
   margin: 0 0 28px;
   font-size: 18px;
-}
-
-/* SERVICES */
-.glass {
-  background: rgba(255, 255, 255, 0.65);
-  border: 1px solid rgba(200, 200, 255, 0.35);
-  border-radius: 20px;
-  box-shadow: 0 14px 40px rgba(15, 43, 70, 0.12);
-  backdrop-filter: blur(14px) saturate(140%);
-  -webkit-backdrop-filter: blur(14px) saturate(140%);
-}
-
-.services {
-  padding: 28px;
-}
-
-.services .chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 0 0 14px;
-}
-
-.services .chips .chip {
-  padding: 10px 14px;
-  border-radius: 999px;
-  border: 1px solid rgba(38, 99, 235, 0.25);
-  background: rgba(255, 255, 255, 0.65);
-  font-weight: 600;
-  cursor: pointer;
-  transition: .25s;
-}
-
-.services .chips .chip.active {
-  background: var(--grad-accent);
-  color: #fff;
-  border-color: transparent;
-  box-shadow: 0 8px 22px rgba(90, 110, 250, 0.28);
-}
-
-.services .pane {
-  display: none;
-  animation: fade .4s ease;
-}
-
-.services .pane.active {
-  display: block;
-}
-
-.services .pane .pane-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-
-@media (max-width: 640px) {
-  .services .pane .pane-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.services .pane .card {
-  background: #ffffffdd;
-  border: 1px solid #eef2ff;
-  border-radius: 16px;
-  padding: 18px;
-}
-
-.services .pane .card h3 {
-  margin: 0 0 8px;
-}
-
-.services .pane .card p {
-  margin: 0;
-  color: #546070;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* COMPANY INFO */
-.company_info {
-  border-spacing: 0;
-}
-
-.company_info, .company_info tbody, .company_info tr, .company_info th, .company_info td {
-  display: block;
-  width: 100%;
-}
-
-.company_info tr {
-  margin: 0 0 1.2rem;
-  border-bottom: 1px solid #e2e8f0;
-  padding-bottom: .6rem;
-}
-
-.company_info th {
-  text-align: left;
-  text-align-last: left;
-  margin-bottom: .2rem;
-  font-weight: 600;
-  color: #475569;
-}
-
-.company_info td {
-  font-weight: 400;
 }
 
 /* FOOTER */

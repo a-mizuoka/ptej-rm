@@ -1,0 +1,8 @@
+#dmca-info .container .section-h {
+  color: var(--ink);
+  text-align: center;
+}
+
+#dmca-info .container .lead .signature {
+  float: inline-end;
+}

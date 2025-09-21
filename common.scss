@@ -44,10 +44,10 @@ a {
     .brand img {
       height: 28px;
       display: block;
-      content: url("images/rm_mojilogo.svg");
+      content: url("/images/rm_mojilogo.svg");
 
       @media (max-width: 640px) {
-        content: url("images/rm_logo.svg");
+        content: url("/images/rm_logo.svg");
       }
     }
 
@@ -82,7 +82,7 @@ a {
     content: "";
     position: absolute;
     inset: 0;
-    background: url('images/icon.svg') no-repeat center right/60%;
+    background: url('/images/icon.svg') no-repeat center right/60%;
     opacity: .12;
     z-index: 0;
   }
@@ -139,117 +139,6 @@ section {
     color: #475569;
     margin: 0 0 28px;
     font-size: 18px;
-  }
-}
-
-/* SERVICES */
-.glass {
-  background: rgba(255, 255, 255, .65);
-  border: 1px solid rgba(200, 200, 255, .35);
-  border-radius: 20px;
-  box-shadow: 0 14px 40px rgba(15, 43, 70, .12);
-  backdrop-filter: blur(14px) saturate(140%);
-  -webkit-backdrop-filter: blur(14px) saturate(140%);
-}
-
-.services {
-  padding: 28px;
-
-  .chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 0 0 14px;
-
-    .chip {
-      padding: 10px 14px;
-      border-radius: 999px;
-      border: 1px solid rgba(38, 99, 235, .25);
-      background: rgba(255, 255, 255, .65);
-      font-weight: 600;
-      cursor: pointer;
-      transition: .25s;
-
-      &.active {
-        background: var(--grad-accent);
-        color: #fff;
-        border-color: transparent;
-        box-shadow: 0 8px 22px rgba(90, 110, 250, .28);
-      }
-    }
-  }
-
-  .pane {
-    display: none;
-    animation: fade .4s ease;
-
-    &.active {
-      display: block;
-    }
-
-    .pane-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      @media (max-width: 640px) {
-        grid-template-columns: 1fr; // スマホでは1列
-      }
-    }
-
-    .card {
-      background: #ffffffdd;
-      border: 1px solid #eef2ff;
-      border-radius: 16px;
-      padding: 18px;
-
-      h3 {
-        margin: 0 0 8px;
-      }
-
-      p {
-        margin: 0;
-        color: #546070;
-      }
-    }
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* COMPANY INFO */
-.company_info {
-  border-spacing: 0; // リセット
-
-  &, tbody, tr, th, td {
-    display: block;
-    width: 100%;
-  }
-
-  tr {
-    margin: 0 0 1.2rem;
-    border-bottom: 1px solid #e2e8f0;
-    padding-bottom: .6rem;
-  }
-
-  th {
-    text-align: left;
-    text-align-last: left;
-    margin-bottom: .2rem;
-    font-weight: 600;
-    color: #475569; // mutedより少し見やすい色
-  }
-
-  td {
-    font-weight: 400;
   }
 }
 

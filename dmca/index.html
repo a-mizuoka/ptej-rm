@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PTEJライツマネジメント合同会社</title>
+  <meta name="description" content="PTEJ Rights Management Inc. — 権利を守り、価値を未来へ。" />
+  <link rel="icon" href="/images/favicon.ico" sizes="any" />
+  <link rel="icon" href="/images/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&family=Noto+Sans+JP:wght@400;600;900&display=swap">
+  <link rel="stylesheet" href="/common.min.css">
+  <link rel="stylesheet" href="page.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="/" aria-label="PTEJ Rights Management Inc.">
+        <img alt="PTEJ RM" />
+      </a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#company">Company</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="/images/rm_logo.svg" alt="" style="width: 300px; height: auto;" fetchpriority=high>
+    <h1>権利を守り、価値を未来へ。</h1>
+  </section>
+
+  <section id="dmca-info" class="top">
+    <div class="container">
+      <h2 class="section-h">YouTubeから「著作権侵害による削除通知」が届いている皆様へ</h2>
+      <p class="lead">
+        当社は、事業の一環として、著作権者から委託を受けたコンテンツ(以下、「弊社管理コンテンツ」といいます。)の著作権または著作隣接権を保護するため、無断で使用された動画や音源などに対し、削除申請を行っております。<br><br>
+
+        YouTubから「著作権侵害による削除通知」が届いている場合は、皆様が投稿された動画内に弊社管理コンテンツが含まれているため削除を申請したものとなります。<br><br>
+
+        当社からの著作権侵害に関する申立は、以下の名義およびメールアドレスから行っています。万が一、当社を装った不正な申立を受けた場合は、速やかに当社までご連絡いただけますようお願いいたします。<br><br>
+
+        【名義】<br>
+        PTEJ Rights Management Inc.<br>
+        【メールアドレス】<br>
+        copyright@ptej-rm.co.jp<br><br>
+        
+        万が一、申立内容に誤りがある場合は、大変お手数をおかけいたしますが申立元のメールアドレスまでご連絡いただくか、YouTube Studio上での異議申し立てをお願いいたします。<br>
+
+        なお、当社からの申立内容において誤りがないとご確認いただけた場合は、特にご連絡いただく必要はございません。<br><br>
+        
+        以上、ご理解、ご協力のほど何卒よろしくお願いいたします。<br><br>
+        <span class="signature">
+            PTEJライツマネジメント合同会社<br>
+            権利侵害対策課
+        <span>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="antipiracy">
+      <div class="link-wrapper">
+        <a href="https://www.noinfringingapp.jp/">
+          <img src="/images/noinfringingapp.webp" alt="あの音楽アプリはもう違法。" loading="lazy">
+        </a>
+      </div>
+      <div class="link-wrapper">
+      <a href="https://www.riaj.or.jp/stopillegaldownload/" >
+        <img src="/images/stop_download.webp" alt="STOP!違法ダウンロード" loading="lazy">
+      </a>
+      </div>
+    </div>
+    <div class="company-name">
+      <strong>PTEJライツマネジメント合同会社</strong>
+    </div>
+    <div class="small">© <span id="y"></span> PTEJ Rights Management Inc. All rights reserved.</div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent=new Date().getFullYear();
+
+    const chips=[...document.querySelectorAll('.chip')];
+    const panes=[...document.querySelectorAll('.pane')];
+    chips.forEach((chip,idx)=>{
+      chip.addEventListener('click',()=>{
+        chips.forEach(c=>{c.classList.remove('active'); c.setAttribute('aria-selected','false')});
+        panes.forEach(p=>p.classList.remove('active'));
+        chip.classList.add('active'); chip.setAttribute('aria-selected','true');
+        panes[idx].classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
