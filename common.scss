@@ -254,7 +254,14 @@ footer {
   .antipiracy {
     display: flex;
     justify-content: center;
-    column-gap: 15px
+    column-gap: 15px;
+
+    @media (max-width: 640px) {
+      flex-direction: column; // スマホでは縦並び
+      row-gap: 15px;          // 縦方向の余白を追加
+      column-gap: 0;          // 横方向の余白は不要に
+      align-items: center;    // 中央揃え
+    }  
   }
 
   .company-name {
