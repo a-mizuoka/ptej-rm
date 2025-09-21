@@ -197,6 +197,12 @@ section .lead {
   gap: 16px;
 }
 
+@media (max-width: 640px) {
+  .services .pane .pane-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .services .pane .card {
   background: #ffffffdd;
   border: 1px solid #eef2ff;
