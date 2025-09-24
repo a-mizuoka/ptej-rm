@@ -1,0 +1,26 @@
+.company_info {
+  border-spacing: 0; // リセット
+
+  &, tbody, tr, th, td {
+    display: block;
+    width: 100%;
+  }
+
+  tr {
+    margin: 0 0 1.2rem;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: .6rem;
+  }
+
+  th {
+    text-align: left;
+    text-align-last: left;
+    margin-bottom: .2rem;
+    font-weight: 600;
+    color: #475569; // mutedより少し見やすい色
+  }
+
+  td {
+    font-weight: 400;
+  }
+}
