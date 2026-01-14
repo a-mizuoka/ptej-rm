@@ -1,0 +1,55 @@
+.info_table {
+  border-spacing: 0;
+}
+
+.info_table, .info_table tbody, .info_table tr, .info_table th, .info_table td {
+  display: block;
+  width: 100%;
+}
+
+.info_table tr {
+  margin: 0 0 1.2rem;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: .6rem;
+}
+
+.info_table th {
+  text-align: left;
+  text-align-last: left;
+  margin-bottom: .2rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+.info_table td {
+  font-weight: 400;
+}
+
+.info_table td a {
+  color: var(--accent, #2563eb);
+  text-decoration: none;
+}
+
+.info_table td a:hover {
+  text-decoration: underline;
+}
+
+.info_table .schedule-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.info_table .schedule-list li {
+  padding: .4rem 0;
+  border-bottom: 1px dashed #e2e8f0;
+}
+
+.info_table .schedule-list li:last-child {
+  border-bottom: none;
+}
+
+#radiomic .container .section-h {
+  color: var(--ink);
+  text-align: center;
+}

@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>特定ラジオマイクの運用調整に関する事項</title>
+  <meta name="description" content="特定ラジオマイクの運用調整に関する事項 - PTEJライツマネジメント合同会社" />
+  <meta property="og:title" content="特定ラジオマイクの運用調整に関する事項">
+  <meta property="og:description" content="特定ラジオマイクの運用調整に関する事項 - PTEJライツマネジメント合同会社">
+  <meta property="og:image" content="/images/og-image.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ptej-rm.co.jp/radiomic/">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="特定ラジオマイクの運用調整に関する事項">
+  <meta name="twitter:description" content="特定ラジオマイクの運用調整に関する事項 - PTEJライツマネジメント合同会社">
+  <meta name="twitter:image" content="/images/og-image.png">
+
+
+  <link rel="icon" href="/images/favicon.ico" sizes="any" />
+  <link rel="icon" href="/images/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&family=Noto+Sans+JP:wght@400;600;900&display=swap">
+  <link rel="stylesheet" href="/common.min.css">
+  <link rel="stylesheet" href="/radiomic/page.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="/" aria-label="PTEJ Rights Management Inc.">
+        <img alt="PTEJ RM" />
+      </a>
+      <div class="nav-links">
+        <a href="/#about">About</a>
+        <a href="/#services">Services</a>
+        <a href="/#company">Company</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="/images/rm_logo.svg" alt="" style="width: 300px; height: auto;" fetchpriority=high>
+    <h1>権利を守り、価値を未来へ。</h1>
+  </section>
+
+ <section id="radiomic" class="top">
+    <div class="container">
+      <h2 class="section-h">特定ラジオマイクの運用調整に関する事項</h2>
+      <div class="radiomic-info">
+          <table class="info_table">
+            <tbody>
+              <tr>
+                <th scope="row">運用予定</th>
+                <td>
+                  <ul class="schedule-list">
+                    <!-- 予定がある場合はここにli要素を追加 -->
+
+                  </ul>
+                  <p class="no-schedule">運用予定はありません</p>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">運用調整用メールアドレス</th>
+                <td><a href="mailto:radiomic@ptej-rm.co.jp">radiomic@ptej-rm.co.jp</a></td>
+              </tr>
+            </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <div class="footer-column">
+        <h3>SNS</h3>
+        <ul>
+          <li><a href="https://x.com/ptej_rm">Official X Account</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Others</h3>
+        <ul>
+          <li><a href="/legal-notice/">特定商取引法に基づく表記</a></li>
+          <li><a href="/request/">YouTubeから「著作権の申し立て」が届いている皆様へ</a></li>
+          <li><a href="/dmca/">YouTubeから「著作権侵害による削除通知」が届いている皆様へ</a></li>
+          <li><a href="/radiomic/">特定ラジオマイクの運用調整に関する事項</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="antipiracy">
+      <div class="link-wrapper">
+        <a href="https://www.noinfringingapp.jp/">
+          <img src="/images/noinfringingapp.webp" alt="あの音楽アプリはもう違法。" loading="lazy">
+        </a>
+      </div>
+      <div class="link-wrapper">
+      <a href="https://www.riaj.or.jp/stopillegaldownload/" >
+        <img src="/images/stop_download.webp" alt="STOP!違法ダウンロード" loading="lazy">
+      </a>
+      </div>
+    </div>
+    <div class="company-name">
+      <strong>PTEJライツマネジメント合同会社</strong>
+    </div>
+    <div class="small">© <span id="y"></span> PTEJ Rights Management Inc. All rights reserved.</div>
+  </footer>
+  <script>
+    document.getElementById('y').textContent=new Date().getFullYear();
+
+    const scheduleList = document.querySelector('.schedule-list');
+    const noSchedule = document.querySelector('.no-schedule');
+    if (scheduleList && scheduleList.querySelectorAll('li').length > 0) {
+      noSchedule.style.display = 'none';
+    } else {
+      scheduleList.style.display = 'none';
+    }
+  </script>
+</body>
+</html>

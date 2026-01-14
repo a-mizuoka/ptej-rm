@@ -1,0 +1,59 @@
+.info_table {
+  border-spacing: 0;
+
+  &, tbody, tr, th, td {
+    display: block;
+    width: 100%;
+  }
+
+  tr {
+    margin: 0 0 1.2rem;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: .6rem;
+  }
+
+  th {
+    text-align: left;
+    text-align-last: left;
+    margin-bottom: .2rem;
+    font-weight: 600;
+    color: #475569;
+  }
+
+  td {
+    font-weight: 400;
+
+    a {
+      color: var(--accent, #2563eb);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .schedule-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: .4rem 0;
+      border-bottom: 1px dashed #e2e8f0;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+#radiomic {
+  .container {
+    .section-h {
+      color: var(--ink);
+      text-align: center;
+    }
+  }
+}
